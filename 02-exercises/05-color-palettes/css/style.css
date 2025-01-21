@@ -1,29 +1,38 @@
+h2 {
+    font-size: 40px;
+    font-style: italic;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 16px;
+    font-style: italic;
+}
+
 /* Color Palette 1 */
 
 #p1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: serif;
     text-align: center;
     padding: 24px;
 }
 #p1-c1 {
-    background-color: #DBCFB0;
-    padding: 24px;
-}
-#p1-c2 {
+    color: #ffffff;
     background-color: #BFC8AD;
     padding: 24px;
 }
-#p1-c3 {
+#p1-c2 {
     color: #ffffff;
     background-color: #90B494;
     padding: 24px;
 }
-#p1-c4 {
+#p1-c3 {
     color: #ffffff;
     background-color: #718F94;
     padding: 24px;
 }
-#p1-c5 {
+#p1-c4 {
     color: #ffffff;
     background-color: #545775;
     padding: 24px;
@@ -32,59 +41,46 @@
 /* Color Palette 2 */
 
 #p2 {
-    font-family: 
+    font-family: sans-serif;
     text-align: center;
+    padding: 24px;
 }
 #p2-c1 {
-    background-color: #;
+    background-color: #FFA69E;
     padding: 24px;
 }
 #p2-c2 {
-    background-color: #;
+    background-color: #FAF3DD;
     padding: 24px;
 }
 #p2-c3 {
-    color: #;
-    background-color: #;
+    background-color: #B8F2E6;
     padding: 24px;
 }
 #p2-c4 {
-    color: #;
-    background-color: #;
-    padding: 24px;
-}
-#p2-c5 {
-    color: #;
-    background-color: #;
+    background-color: #AED9E0;
     padding: 24px;
 }
 
 /* Color Palette 3 */
 
 #p3 {
-    font-family: 
+    font-family: cursive;
     text-align: center;
+    padding: 24px;
 }
 #p3-c1 {
-    background-color: #;
+    color: #ffffff;
+    background-color: #00798C;
     padding: 24px;
 }
 #p3-c2 {
-    background-color: #;
+    color: #ffffff;
+    background-color: #30638E;
     padding: 24px;
 }
 #p3-c3 {
-    color: #;
-    background-color: #;
-    padding: 24px;
-}
-#p3-c4 {
-    color: #;
-    background-color: #;
-    padding: 24px;
-}
-#p3-c5 {
-    color: #;
-    background-color: #;
+    color: #ffffff;
+    background-color: #003D5B;
     padding: 24px;
 }

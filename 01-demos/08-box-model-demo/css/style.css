@@ -1,0 +1,53 @@
+div {
+    /* 
+        Border math:
+
+        One value:
+        - All sides
+
+        Two values:
+        - first is top left corner
+        - second is bottom right corner
+
+        Three values:
+        - first is top left corner
+        - second is top right and bottom left corner
+        - third is bottom right corner
+
+        Four values:
+        - first is top left corner
+        - second is top right corner
+        - third is bottom right corner
+        - fourth is bottom left corner
+    */
+    border: 10px inset greenyellow;
+    border-radius: 100px 40px 60px 20px;
+    /* 
+        Margin math:
+
+        One value:
+        - All sides
+
+        Two values:
+        - first is top/bottom
+        - second is left/right
+
+        Three values:
+        - first is top
+        - second is left/right
+        - third is bottom
+
+        Four values:
+        - first is top
+        - second is right
+        - third is bottom
+        - fourth is left
+
+        Padding follows the same rules.
+
+        Border cannot follow these rules.
+    */
+    margin: 20px 100px 25px 10px;
+    padding: 12px 30px 48px 100px;
+    background-color: pink;
+}

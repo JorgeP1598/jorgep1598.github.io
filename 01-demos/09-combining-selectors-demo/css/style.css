@@ -1,0 +1,32 @@
+div#navbar {
+    background-color: aqua;
+    text-align: center;
+    padding: 24px;
+}
+div#navbar.home {
+    background-color: blueviolet;
+    text-align: center;
+    padding: 24px;
+}
+/* 
+    When there is a space between two or more element names in a selector, you 
+    are saying that the items to the right of each space are general 
+    descendants(children) of the items to the left of the space.
+*/
+div a {
+    color: black;
+}
+a {
+    color: brown;
+}
+div#navbar.home a {
+    color: aquamarine;
+}
+/* 
+    When a selector is using ">" (greater than sign), you are declaring that 
+    the items to the right of the greater than signs are direct/first 
+    descendants(children) of the items to the left.
+*/
+div#navbar > a {
+    color: white;
+}

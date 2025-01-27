@@ -1,0 +1,33 @@
+.ab-head {
+    font-size: 36px;
+}
+.ab-para {
+    font-size: 18px;
+}
+/* vw = viewport width = screen size */
+.rel-head {
+    font-size: 5vw;
+}
+.rel-para {
+    font-size: 2.5vw;
+}
+.ab-img {
+    width: 360px;
+}
+.rel-img {
+    width: 50%;
+}
+.in-cont {
+    border: 5px solid blue;
+    width: 50%;
+    margin: 20px auto;
+}
+.out-cont {
+    border: 5px solid red;
+    width: 66%;
+}
+.in-cont p, .in-cont img {
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+}

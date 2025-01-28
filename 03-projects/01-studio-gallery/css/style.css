@@ -6,19 +6,39 @@
 
     Good luck, and have fun!
 */
-#frame1 {
-    background-color: #ffffff;
+.pictures {
+    background-color: #fffded;
     border: #a77730 8px outset;
     box-shadow: #0000004b 10px 10px 4px;
-    rotate: 5deg;
-    margin-top: 64px;
+    box-shadow: #0000004b 2px 2px 4px inset;
+    display: inline-block;
+}
+#frame1 {
+    margin: 64px 0px 0px 0px;
+    border: #a77730 16px outset;
+    p, h2 {
+        padding: 8px;
+    }
+}
+#frame3 {
+    rotate: -10deg;
+    margin: 32px 10px 0px 0px;
+    p {
+        rotate: 10deg;
+        padding: 12px;
+    }
 }
 #frame2 {
-    background-color: #ffffff;
-    border: #a77730 8px outset;
-    box-shadow: #0000004b 10px 10px 4px;
-    rotate: -10deg;
-    margin: 64px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
+    border: #a77730 14px outset;
+}
+#frame5 {
+    margin: 72px 0px 0px 32px;
+}
+#frame4 {
+    margin: 0px 0px 0px 0px;
+    border-radius: 100%;
+    border: #ffbb00 6px outset;
 }
 p {
     padding: 12px;
@@ -30,5 +50,32 @@ p {
         Calibri, 
         'Trebuchet MS', 
         sans-serif
-    ;
+        ;
+}
+h2 {
+    padding: 12px;
+    margin: 0px;
+    font-size: 32px;
+    font-family: 
+        'Gill Sans', 
+        'Gill Sans MT', 
+        Calibri, 
+        'Trebuchet MS', 
+        sans-serif
+        ;
+}
+#lake {
+    width: 75px;
+    display: block;
+    padding: 12px;
+}
+#lake2 {
+    width: 100px;
+    display: block;
+    padding: 12px;
+}
+#fish {
+    width: 32px;
+    border-radius: 100%;
+    display: block;
 }

@@ -1,0 +1,76 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the Bulletin Board assignment.
+
+    Good luck, and have fun!
+*/
+body {
+    font-family: cursive;
+}
+#row1 #row2{
+    display: inline-block;
+}
+div.post-it {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    box-shadow: 10px 10px 8px #00000050;
+}
+#y1 {
+    background-color: yellow;
+    text-align: center;
+    padding: 10px;
+    rotate: -8deg;
+    p {
+        rotate: 5deg;
+        font-size: 30px;
+    }
+    h3 {
+        rotate: -3deg;
+        padding-bottom: 40px;
+    }
+}
+#b {
+    background-color: lightskyblue;
+    text-align: center;
+    margin-left: 50px;
+    p {
+        rotate: 5deg;
+        font-size: 30px;
+    }
+    h3 {
+        rotate: 3deg;
+    }
+}
+.post-it#cat {
+    box-shadow: 0px 0px 0px;
+}
+#cat img{
+    width: 200px;
+    margin-left: 72px;
+    rotate: 4deg;
+    box-shadow: 10px 10px 8px #00000050;
+}
+#g {
+    background-color: greenyellow;
+    text-align: center;
+    padding: 30px;
+    margin: 40px 0px 0px 100px;
+    rotate: -4deg;
+    h5 {
+        font-style: italic;
+        rotate: -5deg;
+    }
+}
+#p {
+    background-color: palevioletred;
+    text-align: center;
+    padding: 30px;
+    margin: 40px 0px 0px 30px;
+    rotate: 6deg;
+    p {
+        font-size: 25px;
+    }
+}

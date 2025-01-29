@@ -1,0 +1,38 @@
+/* Drill 1 - Write your code solution below */
+#column-d1 {
+    width: 50%;
+    max-width: 1440px;
+}
+
+/* Drill 2 - Write your code solution below */
+#column-d2 {
+    width: 50%;
+    max-width: 1440px;
+    margin-left: auto;
+}
+
+/* Drill 3 - Write your code solution below */
+#column-d3 {
+    width: 50%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* Drill 4 - Write your code solution below */
+#container-d4 {
+    width: 50%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* Drill 5 - Write your code solution below */
+.container-2 {
+    width: 50%;
+    max-width: 1440px;
+}
+#container-d5-1 {
+    margin: auto;
+}
+#container-d5-2 {
+    margin-left: auto;
+}

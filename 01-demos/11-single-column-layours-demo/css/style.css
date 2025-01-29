@@ -1,0 +1,60 @@
+/* 
+    Content-box is going to add your width + left & right padding + left & 
+    right border and display what that total equals as your element's width. 
+    The same will apply to height regarding and bottom padding and border.
+
+    However, border-box will accurately depict the width that you set by 
+    considering the padding and border when sizing the element and 
+    automatically subtracting the required amount to ensure that your element 
+    shows the width or height you put in correctly.
+
+    Example:
+
+    div.cat, .dog {
+        display: inline-block;
+        width: 500px;
+        height: 200px;
+        padding: 10px;
+        border: 10px solid navy;
+        margin: 20px;
+        background-color: lightblue;
+        box-sizing: content-box;
+    }
+    .dog {
+        box-sizing: border-box;
+    } 
+*/
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+/* 
+    For ALL Single Column Layouts: 
+    - You need a Width, the value must be less than 100%
+    - You need a Min-Width AND/OR a Max-Width, the value must be an absolute unit.
+
+    For RIGHT-aligned Single Column Layouts:
+    - In addition to the above, you need a margin-left with a value of auto
+
+    For CENTER-aligned Single Column Layouts:
+    - You will instead use a short-hand margin in addtion to the other requirments,
+    the top and bottom value are up to you, but the LEFT and RIGHT margin value
+    must be set to auto.
+*/
+.single-column {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+.light-container {
+    background-color: lightblue;
+    padding: 48px 0px;
+}
+.dark-container {
+    background-color: darkblue;
+    color: white;
+    padding: 48px 0px;
+}

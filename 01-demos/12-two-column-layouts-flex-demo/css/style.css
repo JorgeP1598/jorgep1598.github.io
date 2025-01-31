@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+/* Two Column Styles */
+#two-columns {
+    display: flex;
+}
+#sidebar {
+    background-color: lavender;
+    flex: 200px;
+    order: 2;
+}
+#main {
+    background-color: lightcyan;
+    flex: 1;
+    order: 1;
+}

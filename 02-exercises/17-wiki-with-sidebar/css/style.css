@@ -19,13 +19,13 @@ a {
 }
 h1 {
     font-size: 3vw;
-    margin: 1vw 0vw 1vw 0vw;
+    margin: 1vw 0vw 2vw 0vw;
 }
 h2 {
     font-size: 2vw;
     padding-bottom: 1vw;
     border-bottom: .25vw solid gray;
-    margin: 1vw 0vw 1vw 0vw;
+    margin: 1vw 0vw 2vw 0vw;
 }
 h3 {
     font-size: 1vw;
@@ -33,7 +33,7 @@ h3 {
 }
 p {
     font-size: 1vw;
-    margin: .5vw 1vw;
+    margin: 1vw 1vw;
 }
 .indent {
     padding-left: .5vw;
@@ -45,13 +45,13 @@ p {
 /* Layout Stuff */
 #two-columns {
     display: flex;
-    gap: 2vw;
+    gap: 4vw;
 }
 .two-columns-right {
     display: flex;
-    gap: 1vw;
+    gap: 2vw;
     p {
-        flex: 3;
+        flex: 1;
     }
     div {
         flex: 1;
@@ -60,7 +60,7 @@ p {
 #sidebar div {
     background-color: #dfdfdf;
     border: .25vw solid gray;
-    padding: 1vw;
+    padding: 2vw;
     position: sticky;
     top: 0;
     h2 {

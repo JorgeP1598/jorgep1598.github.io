@@ -5,7 +5,7 @@
 }
 body {
     font-family: sans-serif;
-    padding: 1vw;
+    padding: 4vw 12vw;
 }
 
 /* Content Stuff */
@@ -51,7 +51,7 @@ p {
     display: flex;
     gap: 1vw;
     p {
-        flex: 1;
+        flex: 3;
     }
     div {
         flex: 1;

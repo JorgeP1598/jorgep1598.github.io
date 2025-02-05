@@ -10,41 +10,84 @@ body {
 }
 /* TEXT STYLES */
 h1 {
-    font-size: 2.5vw;
+    font-size: 2.25vw;
 }
 h2 {
-    font-size: 2vw;
+    font-size: 1.75vw;
 }
 h3 {
-    font-size: 1.5vw;
+    font-size: 1.25vw;
 }
 h4 {
-    font-size: 1vw;
+    font-size: .75vw;
 }
 p {
-    font-size: 1vw;
+    font-size: .75vw;
 }
 a {
-    font-size: 1vw;
+    font-size: .75vw;
+}
+#logo {
+    font-size: 2.25vw;
+    font-weight: bold;
+    display: flex;
+}
+#red {
+    color: #ff3737;
+}
+#blue {
+    color: #4681ff;
+}
+#yellow {
+    color: #ffc400;
+}
+#green {
+    color: #00d13f;
 }
 
 /* MAIN LAYOUT */
+#main-page {
+    padding: 0vw 10vw;
+}
+#navbar {
+    display: grid;
+    align-items: center;
+    grid-template-columns: .5fr 4fr 1fr;
+    margin: 1.25vw 0vw;
+    gap: 1vw;
+}
+#search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    height: 2vw;
+    padding: 0vw 1vw;
+    border: .1vw solid #000000;
+    border-radius: 20vw;
+}
+#search-button p {
+    color: #4681ff;
+    font-weight: bold;
+}
 #three-columns {
     display: grid;
-    grid-template-columns: 1fr 4fr 3fr;
-    padding: 0vw 6vw;
+    grid-template-columns: 1fr 6fr 4fr;
+    margin: 1.25vw 0vw;
+    gap: 2vw;
 }
-.columns1 {
+.columns {
     display: flex;
     flex-direction: column;
 }
-#seller-info, #c3 h2, #product-info {
-    margin-bottom: 1vw;
-    padding-bottom: 1vw;
-    border-bottom: .15vw solid;
+#seller-info, #product-name, #product-info {
+    margin-bottom: 1.25vw;
+    padding-bottom: 1.25vw;
+    border-bottom: .15vw solid #ececec;
 }
-.product-thmbn {
+.product-thmbn, #product {
     margin-bottom: 1vw;
+    border-radius: .5vw;
 }
 
 /* SELLER INFO LAYOUT */
@@ -52,10 +95,14 @@ a {
     display: flex;
     flex-direction: row;
 }
-#seller-info img {
+#seller-info div#pfp {
     width: 8%;
     border-radius: 100%;
     margin-right: 1vw;
+}
+#seller-info img {
+    width: 100%;
+    border-radius: 100%;
 }
 #si1 {
     display: flex;
@@ -77,8 +124,8 @@ a {
 }
 
 /* PRODUCT INFO STYLES */
-#product-info h3, p {
-    margin: 1vw 0vw;
+#price {
+    margin-bottom: 1.25vw;
 }
 #product-info span {
     font-weight: bold;
@@ -95,45 +142,93 @@ a {
 
     width: 2vw;
     height: 2vw;
-    border: .15vw solid;
+    border: .1vw solid;
+    border-radius: .5vw;
 }
-#quantity p, div {
+#quantity p {
     margin-right: 1vw;
+}
+#stock {
+    font-weight: bold;
+    color: #ff3737;
+}
+#cond {
+    font-weight: bold;
 }
 
 /* BUTTON STYLES */
+#buttons {
+    margin-top: 1.25vw;
+    margin-bottom: .5vw;
+    display: flex;
+    flex-direction: column;
+}
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5vw;
     text-align: center;
 
     width: 100%;
     padding: 1vw;
-    margin: 1vw 0vw;
+    margin-bottom: .5vw;
 
-    border: .25vw solid;
+    border: .1vw solid #4681ff;
     border-radius: 20vw;
+}
+.button#blank i {
+    color: #4681ff;
 }
 .button#color {
     font-weight: bold;
-    background-color: blue;
+    background-color: #4681ff;
+    color: #ffffff;
+}
+#blank, #sblank {
+    color: #4681ff;
+}
+#sblank {
+    margin: 0vw;
+    font-weight: bold;
+    height: 2vw;
+    justify-content: center;
+}
+#blank:hover, #sblank:hover {
+    background-color: #ececec;
+    transition: .2s;
+}
+#color:hover {
+    background-color: #2a6eff;
+    transition: .2s;
 }
 
 /* IMAGE STYLES */
 #product {
     display: flex;
     justify-content: center;
-    background-color: gray;
+    background-color: #ececec;
     padding: 0vw 2vw;
     height: 35vw;
     width: 100%;
 }
-img {
+#main-img {
     display: block;
     height: 100%;
 }
 .product-thmbn {
     display: flex;
     justify-content: center;
-    background-color: gray;
-    height: 10vw;
-    width: 10vw;
+    align-items: center;
+    background-color: #ececec;
+    height: 5vw;
+    width: 5vw;
+}
+.thmbn-l {
+    display: block;
+    width: 100%;
+}
+.thmbn-p {
+    display: block;
+    height: 100%;
 }

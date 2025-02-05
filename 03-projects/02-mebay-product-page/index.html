@@ -5,84 +5,132 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mebay Product Page</title>
         <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+        />
     </head>
     <body>
-        <h1>mebay</h1>
-        <div id="three-columns">
-            <!-- COLUMN 1 -->
-            <div id="c1" class="columns1">
-                <div class="product-thmbn portrait">
-                    <img src="images/voltron-1.webp" alt="">
+        <div id="main-page">
+            <div id="navbar" class="columns">
+                <a href="#" id="logo">
+                    <span id="red">me</span>
+                    <span id="blue">b</span>
+                    <span id="yellow">a</span>
+                    <span id="green">y</span>
+                </a>
+                <div id="search" class="columns">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <p>Search for Anything</p>
                 </div>
-                <div class="product-thmbn portrait">
-                    <img src="images/voltron-2.webp" alt="">
-                </div>
-                <div class="product-thmbn landscape">
-                    <img src="images/voltron-3.webp" alt="">
-                </div>
-                <div class="product-thmbn landscape">
-                    <img src="images/voltron-4.webp" alt="">
-                </div>
-                <div class="product-thmbn landscape">
-                    <img src="images/voltron-5.webp" alt="">
-                </div>
-                <div class="product-thmbn portrait">
-                    <img src="images/voltron-6.webp" alt="">
-                </div>
+                <a 
+                    href="#"
+                    id="sblank"
+                    class="button columns"
+                    >
+                    Search
+                </a>
             </div>
-            <!-- COLUMN 2 -->
-            <div id="c2" class="columns1">
-                <div id="product">
-                    <img src="images/voltron-1.webp" alt="lego voltron front">
-                </div>
-            </div>
-            <!-- COLUMN 3 -->
-            <div id="c3" class="columns1">
-                <h2>
-                    LEGO Ideas: Voltron (21311) Complete RETIRED Brand New 
-                    Sealed
-                </h2>
-
-                <!-- SELLER INFO -->
-                <div id="seller-info">
-                    <img src="images/ferret.jpg" alt="ferret peaking out hole">
-                    <div id="si1">
-                        <h4>Tyrouo</h4>
-                        <div>
-                            <a href="#">100% Positive</a>
-                            <a href="#">Seller's Other Items</a>
-                            <a href="#">Contact Seller</a>
-                        </div>
+            <div id="three-columns">
+                <!-- COLUMN 1 -->
+                <div id="c1" class="columns">
+                    <div class="product-thmbn portrait">
+                        <img class="thmbn-p" src="images/voltron-1.webp" alt="">
+                    </div>
+                    <div class="product-thmbn portrait">
+                        <img class="thmbn-p" src="images/voltron-2.webp" alt="">
+                    </div>
+                    <div class="product-thmbn landscape">
+                        <img class="thmbn-l" src="images/voltron-3.webp" alt="">
+                    </div>
+                    <div class="product-thmbn landscape">
+                        <img class="thmbn-l" src="images/voltron-4.webp" alt="">
+                    </div>
+                    <div class="product-thmbn landscape">
+                        <img class="thmbn-l" src="images/voltron-5.webp" alt="">
+                    </div>
+                    <div class="product-thmbn portrait">
+                        <img class="thmbn-p" src="images/voltron-6.webp" alt="">
                     </div>
                 </div>
+                <!-- COLUMN 2 -->
+                <div id="c2" class="columns">
+                    <div id="product">
+                        <img id="main-img" src="images/voltron-1.webp" alt="">
+                    </div>
+                </div>
+                <!-- COLUMN 3 -->
+                <div id="c3" class="columns">
+                    <h2 id="product-name">
+                        LEGO Ideas: Voltron (21311) Complete RETIRED Brand New 
+                        Sealed
+                    </h2>
 
-                <!-- PRODUCT INFO -->
-                <div id="product-info">
-                    <h3>US $549.50</h3>
+                    <!-- SELLER INFO -->
+                    <div id="seller-info">
+                        <div id="pfp">
+                            <img 
+                                src="images/ferret.jpg" 
+                                alt="ferret peaking out hole"
+                            >
+                        </div>
+                        <div id="si1">
+                            <h4>Tyrouo</h4>
+                            <div>
+                                <a href="#">100% Positive</a>
+                                <a href="#">Seller's Other Items</a>
+                                <a href="#">Contact Seller</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCT INFO -->
+                    <div id="product-info">
+                        <h3 id="price">US $549.50</h3>
+                        <div id="quantity">
+                            <p>Quantity:</p>
+                            <div id="quantity-number">
+                                <p>5</p>
+                            </div>
+                            <p id="stock">7 Left in Stock</p>
+                        </div>
+                    </div>
                     <p>
                         Condition: 
-                        <span>New</span>
+                        <span id="cond">New</span>
                     </p>
-                    <div id="quantity">
-                        <p>Quantity</p>
-                        <div id="quantity-number">
-                            <p>5</p>
-                        </div>
-                        <p>7 Left in Stock</p>
+                
+                    <!-- BUTTONS -->
+                    <div id="buttons">
+                        <a 
+                            href="#"
+                            id="color"
+                            class="button"
+                            >
+                            Buy Now
+                        </a>
+                        <a 
+                            href="#"
+                            id="blank"
+                            class="button"
+                            >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to Cart
+                        </a>
+                        <a 
+                            href="#"
+                            id="blank"
+                            class="button"
+                            >
+                            <i class="fa-regular fa-heart"></i>
+                            Add to Wishlist
+                        </a>
                     </div>
-                </div>
-            
-                <!-- BUTTONS -->
-                <div id="color" class="button">
-                    <a href="#">Buy Now</a>
-                </div>
-                <div id="blank" class="button">
-                    <a href="#">Add to Cart</a>
-                </div>
-                <div id="blank" class="button">
-                    <a href="#">Add to Wishlist</a>
                 </div>
             </div>
         </div>
+        
     </body>
 </html>

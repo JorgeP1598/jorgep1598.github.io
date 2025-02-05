@@ -90,12 +90,15 @@ input {
     display: flex;
     flex-direction: column;
 }
-#seller-info, #product-name, #product-info {
+#seller-info, 
+#product-name, 
+#product-info {
     margin-bottom: 1.25vw;
     padding-bottom: 1.25vw;
     border-bottom: .15vw solid #ececec;
 }
-.product-thmbn, #product {
+.product-thmbn, 
+#product {
     margin-bottom: 1vw;
     border-radius: .5vw;
 }
@@ -119,7 +122,7 @@ input {
     flex-direction: column;
     justify-content: space-between;
 }
-#si1 div{
+#si1 div {
     display: flex;
     flex-direction: row;
 }
@@ -156,7 +159,8 @@ input {
     border: .1vw solid;
     border-radius: .5vw;
 }
-#quantity p, #quantity-number {
+#quantity p, 
+#quantity-number {
     margin-right: 1vw;
 }
 #stock {
@@ -196,7 +200,8 @@ input {
     background-color: #4681ff;
     color: #ffffff;
 }
-#blank, #sblank {
+#blank, 
+#sblank {
     color: #4681ff;
 }
 #sblank {
@@ -205,7 +210,8 @@ input {
     height: 2vw;
     justify-content: center;
 }
-#blank:hover, #sblank:hover {
+#blank:hover, 
+#sblank:hover {
     background-color: #ececec;
     transition: .2s;
 }

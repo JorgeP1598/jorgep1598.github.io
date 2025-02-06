@@ -26,6 +26,5 @@ body {
 
 #section-1 .example-card {
     max-width: 350px;
-    margin: 16px;
     box-shadow: 4px 4px 8px #00000088;
 }

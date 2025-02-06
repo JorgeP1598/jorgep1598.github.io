@@ -7,7 +7,6 @@
     Just be aware that you may break some
     of the setup.css styling if you do so.
 */
-
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -21,48 +20,52 @@
     flex-wrap: wrap;
     gap: .75vw;
 }
-.card-style-1 {
+.card-style-2 {
+    display: flex;
+    flex-direction: column;
     max-width: 350px;
-    background-color: #effff2;
+    background-color: #ffffff;
+    border-radius: 40px;
     box-shadow: 0px 10px 6px #00000073;
     transition: 
         box-shadow .2s,
         transform .2s;
 }
-.card-style-1:hover {
+.card-style-2:hover {
     box-shadow: 0px 8px 8px #00000073;
     transform: scale(1.03);
+}
+.profile-pic-container, 
+p {
+    margin: 20px;
+}
+.animagram-header, 
+.animagram-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+}
+.animagram-footer > span {
+    font-size: 25px;
+}
+.profile-pic-container > img {
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+    width: 200px;
 }
 
 img {
     width: 100%;
 }
+.brand-name {
+    font-size: 28px;
+}
 h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+    text-align: center;
 }
 p {
-    font-size: 15px;
-    margin: 20px;
-}
-a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: green;
-    font-size: 20px;
-    padding: 20px;
-    border: 5px solid green;
-    transition: 
-        background-color 0.2s, 
-        color 0.2s,
-        font-weight 0.2s;
-}
-a:hover {
-    background-color: transparent;
-    color: green;
-    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
 }

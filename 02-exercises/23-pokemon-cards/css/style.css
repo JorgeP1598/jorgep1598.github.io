@@ -15,11 +15,8 @@
     color: black;
     border: none;
 }
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .75vw;
-}
+
+/* BACKGROUND GRADIENTS */
 #pokemon-card-1, 
 #pokemon-card-2 {
     background: linear-gradient(
@@ -42,6 +39,13 @@
         #74e3ff, 
         #1dd2ff);
 }
+
+/* CARD LAYOUT */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75vw;
+}
 .card-style-3 {
     display: flex;
     flex-direction: column;
@@ -49,7 +53,7 @@
     max-height: 525px;
     padding: 15px;
     border: #ffd900 solid 16px;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0px 10px 6px #00000073;
     transition: 
         box-shadow .2s,
@@ -65,46 +69,39 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 5px;
-}
-.description {
-    margin-right: 10px;
-    margin-left: 5px;
-}
-.attack {
-    border-bottom: black solid 2px;
-    height: 100%;
 }
 
+/* IMAGE STYLING */
 .card-style-3 > img {
     width: 100%;
     border: #d6a400 solid 5px;
     margin-bottom: 5px;
 }
+
+/* TEXT STYLING */
 .name {
-    font-size: 28px;
+    font-size: 25px;
 }
-.description {
-    font-size: 14px;
-}
-.bold, 
 .health {
     font-size: 20px;
-    font-weight: bold;
-    text-align: center;
+}
+.attack {
+    border-bottom: black solid 2px;
+    height: 100%;
+}
+.description {
+    font-size: 13.5px;
+    margin-right: 10px;
+    margin-left: 5px;
 }
 .power {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
 }
-.data {
-    display: flex;
-    text-align: center;
-    font-size: 10px;
+.bold {
+    font-size: 20px;
     font-weight: bold;
-    border: #d6a400 solid 2px;
-    padding: 3px;
-    margin-top: 5px;
+    text-align: center;
 }
 .details {
     font-size: 12px;
@@ -116,4 +113,13 @@
         #d89e00, 
         #ffd000, 
         #d89e00);
+}
+.data {
+    display: flex;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    border: #d6a400 solid 2px;
+    padding: 3px;
+    margin-top: 5px;
 }

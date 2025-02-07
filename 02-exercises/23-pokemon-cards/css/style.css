@@ -1,0 +1,122 @@
+/*
+    Write your CSS for the assignment here.
+
+    You shouldn't need to modify the HTML;
+    however, you are allowed to. 
+    
+    Just be aware that you may break some
+    of the setup.css styling if you do so.
+*/
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: black;
+    border: none;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75vw;
+}
+#pokemon-card-1, #pokemon-card-2 {
+    background: linear-gradient(
+        -45deg, 
+        #98ff98, 
+        #007c00, 
+        #98ff98);
+}
+#pokemon-card-3 {
+    background: linear-gradient(
+        -45deg, 
+        #ff9d1d, 
+        #ff6600, 
+        #ff9d1d);
+}
+#pokemon-card-4 {
+    background: linear-gradient(
+        -45deg, 
+        #1dd2ff, 
+        #74e3ff, 
+        #1dd2ff);
+}
+.card-style-3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    max-height: 525px;
+    padding: 15px;
+    background: linear-gradient(
+        0deg, 
+        #ffee00, 
+        #ffbb00, 
+        #ffee00);
+    border: #ffd900 solid 16px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 6px #00000073;
+    transition: 
+        box-shadow .2s,
+        transform .2s;
+}
+.card-style-3:hover {
+    box-shadow: 0px 8px 8px #00000073;
+    transform: scale(1.03);
+}
+.pokemon-header, 
+.attack {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.description {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.attack {
+    border-bottom: black solid 2px;
+    height: 100%;
+}
+
+.card-style-3 > img {
+    width: 100%;
+    border: #ffbb00 solid 5px;
+}
+.name {
+    font-size: 28px;
+}
+.description {
+    font-size: 14px;
+}
+.bold, 
+.health {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.power {
+    font-size: 20px;
+    font-weight: bold;
+}
+.data {
+    display: flex;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    border: #ffbb00 solid 2px;
+    padding: 3px;
+    margin-top: 5px;
+}
+.details {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    background: linear-gradient(
+        90deg, 
+        #d89e00, 
+        #ffd000, 
+        #d89e00);
+}

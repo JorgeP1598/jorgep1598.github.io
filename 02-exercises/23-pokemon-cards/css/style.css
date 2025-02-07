@@ -23,21 +23,24 @@
         -45deg, 
         #98ff98, 
         #007c00, 
-        #98ff98);
+        #98ff98
+    );
 }
 #pokemon-card-3 {
     background: linear-gradient(
         -45deg, 
         #ff9d1d, 
         #ff6600, 
-        #ff9d1d);
+        #ff9d1d
+    );
 }
 #pokemon-card-4 {
     background: linear-gradient(
         -45deg, 
         #1dd2ff, 
         #74e3ff, 
-        #1dd2ff);
+        #1dd2ff
+    );
 }
 
 /* CARD LAYOUT */
@@ -112,7 +115,8 @@
         90deg, 
         #d89e00, 
         #ffd000, 
-        #d89e00);
+        #d89e00
+    );
 }
 .data {
     display: flex;

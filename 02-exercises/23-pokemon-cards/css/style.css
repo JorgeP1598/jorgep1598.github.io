@@ -20,7 +20,8 @@
     flex-wrap: wrap;
     gap: .75vw;
 }
-#pokemon-card-1, #pokemon-card-2 {
+#pokemon-card-1, 
+#pokemon-card-2 {
     background: linear-gradient(
         -45deg, 
         #98ff98, 

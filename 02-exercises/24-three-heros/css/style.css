@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.hero {
+    height: 100vh;
+}
+.bold {
+    font-weight: bold;
+    transition: .5s;
+}
+.button {
+    color: white;
+    text-align: center;
+
+    padding: 2vh;
+    background-color: #ffffff1e;
+    box-shadow: 0vh .5vh 1vh .5vh #00000036;
+    transition: .25s;
+}
+.button:focus {
+    background-color: #ffffff48;
+    transition: .25s;
+}
+.button:hover {
+    transform: scale(1.2);
+    box-shadow: 0vh .5vh 1vh .5vh #00000036;
+    transition: .25s;
+}
+.button.bold:hover {
+    transform: scale(.85);
+    box-shadow: 0vh .5vh 1vh .5vh #00000036;
+    transition: .5s;
+}
+.button-cluster {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+h2 {
+    font-size: 5vh;
+}
+h4 {
+    font-size: 2.5vh;
+}
+a {
+    font-size: 2vh;
+}
+
+/* HERO ONE */
+#one {
+    background-image: url("../images/airplane.jpg");
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vh;
+}
+#one h2 {
+    color: white;
+}
+#one h4 {
+    position: absolute;
+    top: 75%;
+    color: white;
+}
+
+/* HERO TWO */
+#two {
+    background-image: url("../images/spooky-lake.jpg");
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10vh;
+}
+#two h2 {
+    color: white;
+}
+#two h4 {
+    position: absolute;
+    top: 65%;
+    color: white;
+}
+
+/* HERO THREE */
+#three {
+    background-image: url("../images/airplane2.jpg");
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4vh;
+    padding: 10vh;
+}
+#three h2 {
+    color: white;
+}
+#three h4 {
+    color: white;
+}

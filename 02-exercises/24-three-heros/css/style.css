@@ -86,7 +86,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     padding: 10vh;
 }
 #two h2 {

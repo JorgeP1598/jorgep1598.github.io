@@ -13,7 +13,7 @@ h1 {
     font-size: 5vw;
     color: white;
     position: sticky;
-    bottom: 60%;
+    top: 0;
 }
 
 /* LAYOUT STYLES */

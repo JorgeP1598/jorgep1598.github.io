@@ -80,6 +80,13 @@ p, a{
     background-color: transparent;
     /* transform: scale(1.15); */
 }
+#top {
+    font-size: .75vw;
+    font-weight: bolder;
+
+    margin: .5vw;
+    padding: .5vw;
+}
 /* NAVBAR */
 .navbar {
     background-color: #000;

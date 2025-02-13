@@ -22,19 +22,19 @@
 
 /* TEXT STYLES */
 h1 {
-    font-size: 6vw;
+    font-size: clamp(2vw, 6vw, 10vw);
     font-family: "Bebas Neue", serif;
-    letter-spacing: .3vw;
+    letter-spacing: clamp(.005vw, .3vw, 1.5vw);
 }
 h3 {
-    font-size: 2vw;
+    font-size: clamp(1vw, 2vw, 6vw);
     font-family: "Bebas Neue", serif;
-    letter-spacing: .3vw;
+    letter-spacing: clamp(.005vw, .3vw, 1.5vw);
 }
 p, a{
-    font-size: 1vw;
+    font-size: clamp(.5vw, 1vw, 4vw);
     font-family: "Poppins", serif;
-    letter-spacing: .07vw;
+    letter-spacing: clamp(.05vw, .07vw, 1vw);
 }
 
 /* BUTTON STYLES */
@@ -87,7 +87,7 @@ a {
 
 /* HERO STYLES */
 .hero {
-    height: 100vh;
+    height: 100vmin;
 }
 #one {
     background: 
@@ -101,7 +101,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 10vh;
+    padding: 10vmin;
 }
 #one h1 {
     color: white;
@@ -112,14 +112,14 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 25vw;
-    gap: 4vw;
-    margin: 4vw 0px;
+    gap: 4vmin;
+    margin: 4vmin 0px;
 }
 .img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: .5vw;
+    border-radius: .5vmin;
     
     background-size: cover;
     background-position: center center;
@@ -131,7 +131,7 @@ a {
     transition: .25s ease;
 }
 .img:hover {
-    box-shadow: 0vw 0vw 2vw #ffffff75;
+    box-shadow: 0vmin 0vmin 2vmin #ffffff75;
 }
 .box {
     color: white;

@@ -460,6 +460,9 @@ body {
     #nav {
         flex-wrap: wrap;
     }
+    #nav a {
+        flex: 160px;
+    }
 }
 
 /* mobile */
@@ -493,6 +496,9 @@ body {
     }
     #nav {
         flex-wrap: wrap;
+    }
+    #nav a {
+        flex: 90px;
     }
     #banner-container,
     #card-1,

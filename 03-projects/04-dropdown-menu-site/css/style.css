@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: #1b1b1b;
+    text-decoration: none;
+}
+/* TEXT STYLES */
+.white {
+    color: white;
+}
+.black {
+    color: #1b1b1b;
+}
+.italics {
+    font-style: italic;
+}
+.italics.white {
+    color: white;
+}
+.italics.black {
+    color: #1b1b1b;
+}
+.emphasis.white {
+    color: white;
+}
+.emphasis.black {
+    color: #1b1b1b;
+}
+
+/* NAVBAR STYLES */
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #ffe600;
+    padding: 9.5px;
+}
+
+.dropdown.adopt {
+    display: none;
+}
+
+#brand-name {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: bold;
+}
+.nav a {
+    font-size: 20px;
+    margin: 8px 12px;
+    display: inline-block;
+}
+
+/* BUTTON STYLES */
+.button {
+    border-radius: 100vw;
+    padding: 16px 20px;
+    margin: 20px 32px;
+    text-align: center;
+}
+.button.white {
+    background-color: white;
+    color: #1b1b1b;
+}
+.button.black {
+    background-color: #1b1b1b;
+    color: white;
+}
+.cta {
+    font-size: 48px;
+    border-radius: 100vw;
+    padding: 20px 32px;
+}
+
+/* HERO STYLES */
+.hero.main {
+    height: 110vh;
+    background: url("../images/hero-main.jpg");
+    background-size: cover;
+    background-position: 320px center;
+    position: relative;
+}
+.hero.main #txt {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+    padding: 32px;
+
+    color: white;
+    background-color: #ffe600;
+    font-size: 72px;
+}
+#cta-area {
+    background-color: #ffe600;
+    padding: 88px;
+    width: 100%;
+    text-align: center;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) and (min-width: 326px) {
+    
+}
+
+/* MOBILE */
+@media screen and (max-width: 325px) {
+    
+}

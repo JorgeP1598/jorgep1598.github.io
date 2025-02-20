@@ -455,13 +455,14 @@ body {
         ;
     }
     #header h1 {
-        font-size: 56px;
+        font-size: 48px;
     }
     #nav {
         flex-wrap: wrap;
     }
     #nav a {
-        flex: 160px;
+        flex: 190px;
+        border-bottom: 2px solid #777;
     }
 }
 
@@ -481,8 +482,6 @@ body {
             "footer"
             "bottom"
         ;
-        align-items: center;
-        justify-content: center;
     }
     #shield-image, #search-bar, #search-button {
         display: none;
@@ -492,13 +491,14 @@ body {
         align-items: center;
     }
     #header h1 {
-        font-size: 48px;
+        font-size: 36px;
     }
     #nav {
         flex-wrap: wrap;
     }
     #nav a {
-        flex: 90px;
+        flex: 150px;
+        border-bottom: 2px solid #777;
     }
     #banner-container,
     #card-1,
@@ -507,5 +507,7 @@ body {
     #aside,
     #main {
         background-color: transparent;
+        padding: 0px;
+        margin: 0px;
     }
 }

@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #ffef94;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.card {
+    flex: 300px;
+    color: #fff;
+    border: 3px solid #fff;
+    margin: 24px;
+    text-align: center;
+}
+.card a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    border: 3px solid #fff;
+    padding: 12px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: #00000050;
+    padding: 24px;
+    gap: 16px;
+}
+
+.gallery1 {
+    .card {
+        background-size: cover;
+        background-position: center center;
+    }
+    .one {
+        background-image: url("../images/yellow7.jpg");
+    }
+    .two {
+        background-image: url("../images/yellow2.jpg");
+    }
+    .three {
+        background-image: url("../images/yellow3.jpg");
+    }
+    .four {
+        background-image: url("../images/yellow4.jpg");
+    }
+    .card .content {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-8px);
+        transition: 
+            opacity 0.5s,
+            visibility 0.5s,
+            transform 0.5s
+        ;
+    }
+    .card:hover .content {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+}
+.gallery2 {
+    .card {
+        background-size: cover;
+        background-position: center center;
+    }
+    .one {
+        background-image: url("../images/yellow5.jpg");
+    }
+    .two {
+        background-image: url("../images/yellow6.jpg");
+    }
+    .three {
+        background-image: url("../images/yellow8.jpg");
+    }
+    .four {
+        background-image: url("../images/yellow9.jpg");
+    }
+    .card:hover .content{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .card .content{
+        transition:
+            opacity 0.5s,
+            visibility 0.5s
+        ;
+    }
+}
+.gallery3 {
+    .card {
+        background-size: cover;
+        background-position: center center;
+    }
+    .one {
+        background-image: url("../images/yellow10.jpg");
+    }
+    .two {
+        background-image: url("../images/yellow11.jpg");
+    }
+    .three {
+        background-image: url("../images/yellow12.jpg");
+    }
+    .four {
+        background-image: url("../images/yellow1.jpg");
+    }
+    .card:hover {
+        background-color: lightcyan;
+        box-shadow: 4px 4px 4px #0004;
+        transform: translateY(-4px);
+    }
+    .card {
+        transition: 
+            background-color 0.5s,
+            box-shadow 0.5,
+            transform 0.5s
+        ;
+    }
+    .card:hover a {
+        background-color: #ffffff;
+        color: #000000;
+        box-shadow: 16px 0px 8px #0004;
+        transform: translateY(-4px);
+    }
+    .card a {
+        transition: 
+            background-color 2s,
+            box-shadow 2s,
+            transform 2s
+        ;
+    }
+    .card:hover .content{
+        opacity: 1;
+        visibility: visible;
+    }
+    .card .content{
+        opacity: 0;
+        visibility: hidden;
+        transition:
+            opacity 0.5s,
+            visibility 0.5s
+        ;
+    }
+}

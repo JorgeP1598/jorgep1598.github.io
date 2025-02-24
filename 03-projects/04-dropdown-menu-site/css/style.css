@@ -36,6 +36,9 @@ a {
 .italics {
     font-style: italic;
 }
+.emphasis {
+    font-weight: bold;
+}
 .italics.white {
     color: white;
 }
@@ -66,6 +69,7 @@ a {
 .nav a {
     font-size: 20px;
     display: inline-block;
+    text-align: center;
 }
 .nav #pages > a, .nav #pages .dropdown-container > a {
     background-color: transparent;
@@ -78,6 +82,7 @@ a {
 }
 #pages {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .dropdown-container {
@@ -134,12 +139,22 @@ a {
 }
 
 .image-container {
-    width: 640px;
-    height: 640px;
+    width: 95%;
+    height: 75%;
     border-radius: 40px;
 }
 #betsy {
     background: url("../images/betsy.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#crabs {
+    background: url("../images/mr-crabs.jpg");
+    background-size: cover;
+    background-position: right center;
+}
+#loaf {
+    background: url("../images/loaf.jpg");
     background-size: cover;
     background-position: center center;
 }
@@ -165,9 +180,6 @@ a {
     flex-direction: column;
     gap: 64px;
     padding: 64px;
-}
-.two-column.adopt > .column.two {
-    padding-left: 128px;
 }
 .rows {
     display: flex;
@@ -209,15 +221,188 @@ a {
 
 /* DESKTOP */
 @media screen and (min-width: 769px) {
-
+    .column.one > h1 {
+        visibility: hidden;
+        display: none;
+    }
+    .column.two > h1 {
+        visibility: visible;
+    }
+}
+@media screen and (max-width: 907px) {
+    .nav {
+        padding-bottom: 10px;
+    }
 }
 
 /* TABLET */
 @media screen and (max-width: 768px) and (min-width: 326px) {
-    
+    .nav {
+        flex-direction: column;
+        padding: 16px;
+    }
+    .dropdown-menu {
+        z-index: 1;
+    }
+    .nav > #pages {
+        justify-content: space-evenly;
+    }
+    #brand-name {
+        font-size: 28px;
+    }
+    .nav a {
+        font-size: 20px;
+    }
+    .hero.main {
+        flex-direction: column;
+        background-position: -200px -120px;
+        position: relative;
+    }
+    #txt {
+        height: 30vh;
+        width: 100vw;
+        gap: 16px;
+        position: absolute;
+        bottom: 0;
+    }
+    #txt p#cta {
+        font-size: 48px;
+    }
+    .cta {
+        font-size: 32px;
+        padding: 8px 16px;
+        margin: 0px 160px;
+    }
+    #cta-area {
+        display: none;
+    }
+
+    .two-column {
+        flex-direction: column;
+    }
+    .two-column.adopt {
+        height: 0vh;
+    }
+    .column.one, .column.two {
+        align-items: center;
+        text-align: center;
+    }
+    .two-column > .column.one, .column.two {
+        gap: 48px;
+        padding: 32px;
+    }
+    .column.one > h1 {
+        visibility: hidden;
+        display: none;
+    }
+
+    h1 {
+        font-size: 56px;
+    }
+    p.desc {
+        font-size: 20px;
+        padding-right: 0px;
+    }
+    p.specs {
+        font-size: 18px;
+    }
+
+    .image-container {
+        width: 75vw;
+        height: 75vw;
+    }
 }
 
 /* MOBILE */
 @media screen and (max-width: 325px) {
-    
+    .nav {
+        flex-direction: column;
+        padding: 16px 0px;
+    }
+    #brand-name {
+        font-size: 24px;
+    }
+    .nav #pages {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .nav a {
+        font-size: 18px;
+        width: 100%;
+    }
+    .nav #pages .dropdown-container a {
+        width: 100%;
+    }
+    .nav #nav-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .dropdown-menu {
+        z-index: 1;
+    }
+    .hero.main {
+        flex-direction: column;
+        background-position: -200px -120px;
+        position: relative;
+    }
+    #txt {
+        height: 30vh;
+        width: 100vw;
+        gap: 16px;
+        position: absolute;
+        bottom: 0;
+    }
+    #txt p#cta {
+        font-size: 48px;
+    }
+    .cta {
+        font-size: 32px;
+        padding: 8px 16px;
+        margin: 0px 160px;
+    }
+    #cta-area {
+        display: none;
+    }
+
+    .two-column {
+        flex-direction: column;
+    }
+    .two-column.adopt {
+        height: 0vh;
+    }
+    .column.one, .column.two {
+        align-items: center;
+        text-align: center;
+    }
+    .two-column > .column.one, .column.two {
+        gap: 24px;
+        padding: 32px;
+    }
+    .column.one > h1 {
+        visibility: visible;
+        display: block;
+    }
+    .column.two > h1 {
+        visibility: hidden;
+        display: none;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+    p.desc {
+        font-size: 16px;
+        padding-right: 0px;
+    }
+    p.specs {
+        font-size: 12px;
+    }
+
+    .image-container {
+        width: 75vw;
+        height: 75vw;
+    }
 }

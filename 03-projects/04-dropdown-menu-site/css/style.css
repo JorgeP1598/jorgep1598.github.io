@@ -222,16 +222,6 @@ a {
     font-size: 72px;
 }
 
-/* DESKTOP */
-@media screen and (min-width: 769px) {
-    .column.one > h1 {
-        visibility: hidden;
-        display: none;
-    }
-    .column.two > h1 {
-        visibility: visible;
-    }
-}
 @media screen and (max-width: 907px) {
     .nav {
         padding-bottom: 10px;
@@ -258,21 +248,21 @@ a {
     }
     .hero.main {
         flex-direction: column;
-        background-position: -200px -120px;
+        background-position: center center;
         position: relative;
     }
     #txt {
-        height: 30vh;
         width: 100vw;
         gap: 16px;
         position: absolute;
         bottom: 0;
+        align-items: center;
     }
     #txt p#cta {
-        font-size: 48px;
+        font-size: 40px;
     }
     .cta {
-        font-size: 32px;
+        font-size: 24px;
         padding: 8px 16px;
         margin: 0px 160px;
     }
@@ -295,10 +285,6 @@ a {
     .column.two {
         gap: 48px;
         padding: 32px;
-    }
-    .column.one > h1 {
-        visibility: hidden;
-        display: none;
     }
 
     h1 {
@@ -350,21 +336,21 @@ a {
     }
     .hero.main {
         flex-direction: column;
-        background-position: -200px -120px;
+        background-position: center center;
         position: relative;
     }
     #txt {
-        height: 30vh;
         width: 100vw;
         gap: 16px;
         position: absolute;
         bottom: 0;
+        align-items: center;
     }
     #txt p#cta {
-        font-size: 48px;
+        font-size: 32px;
     }
     .cta {
-        font-size: 32px;
+        font-size: 20px;
         padding: 8px 16px;
         margin: 0px 160px;
     }
@@ -387,14 +373,6 @@ a {
     .column.two {
         gap: 24px;
         padding: 32px;
-    }
-    .column.one > h1 {
-        visibility: visible;
-        display: block;
-    }
-    .column.two > h1 {
-        visibility: hidden;
-        display: none;
     }
 
     h1 {

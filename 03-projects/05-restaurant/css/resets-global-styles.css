@@ -12,42 +12,48 @@
     --primary2: #333132;
     --secondary: #432310;
     --white: #fff;
+    --sixteen: 16px;
+    --twenty-four: 20px 24px;
+    --twentyfour: 24px;
+    --small: 8px;
+    --large: 20px;
 }
 
 /* HEADINGS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Hepta Slab", serif;
+    letter-spacing: 1px;
+}
 h1 {
     font-size: 80px;
-    font-family: "Hepta Slab", serif;
 }
 h2 {
     font-size: 64px;
-    font-family: "Hepta Slab", serif;
 }
 h3 {
     font-size: 48px;
-    font-family: "Hepta Slab", serif;
 }
 h4 {
     font-size: 40px;
-    font-family: "Hepta Slab", serif;
 }
 h5 {
     font-size: 32px;
-    font-family: "Hepta Slab", serif;
 }
 h6 {
     font-size: 24px;
-    font-family: "Hepta Slab", serif;
 }
 
 /* BODY */
-p {
-    font-size: 16px;
-    font-family: "DM Sans", sans-serif;
-}
+p,
 a {
     font-size: 16px;
     font-family: "DM Sans", sans-serif;
+    letter-spacing: .5px;
 }
 
 /* WEIGHTS AND STYLES */
@@ -56,28 +62,6 @@ a {
 }
 .italics {
     font-style: italic;
-}
-
-/* SIZES */
-.small {
-    font-size: 12px;
-}
-.large {
-    font-size: 20px;
-}
-
-/* COLORS */
-.yellow {
-    color: var(--primary1);
-}
-.black {
-    color: var(--primary2);
-}
-.brown {
-    color: var(--secondary);
-}
-.white {
-    color: var(--white);
 }
 
 /* BRAND NAME */

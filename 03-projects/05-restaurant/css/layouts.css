@@ -1,0 +1,14 @@
+.three-columns {
+    display: flex;
+}
+.container.left {
+    flex: 1;
+}
+.container.center {
+    flex: 1;
+    text-align: center;
+}
+.container.right {
+    flex: 1;
+    text-align: right;
+}

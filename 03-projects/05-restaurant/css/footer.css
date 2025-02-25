@@ -1,0 +1,27 @@
+#footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary2);
+}
+
+#footer .logo span {
+    color: var(--primary1);
+}
+
+#footer .container.center {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#footer h6 {
+    color: var(--white);
+}
+#footer .link {
+    color: var(--white);
+}
+
+#copyright {
+    text-align: center;
+    color: var(--white);
+}

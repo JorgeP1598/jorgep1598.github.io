@@ -163,5 +163,72 @@ a {
 
 /* MOBILE */
 @media screen and (max-width: 320px) {
-
+    h1 {
+        font-size: 72px;
+    }
+    h2 {
+        font-size: 56px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    h4 {
+        font-size: 32px;
+    }
+    h5 {
+        font-size: 24px;
+    }
+    h6 {
+        font-size: 16px;
+    }
+    p,
+    a {
+        font-size: 12px;
+    }
+    #header {
+        flex-direction: column;
+    }
+    #header .pages {
+        flex-direction: column;
+    }
+    #single-column,
+    .threecolumns,
+    #cta,
+    .media-text,
+    .media-text > .container,
+    .cards,
+    .menu.gallery,
+    #footer {
+        gap: 16px;
+    }
+    #hero {
+        p {
+            font-size: 72px;
+        }
+        a {
+            font-size: 16px;
+        }
+    }
+    .media img {
+        width: 200px;
+        height: 200px;
+    }
+    .media-text .container {
+        width: 200px;
+        height: 300px;
+    }
+    #featured-dish {
+        background-size: 640px;
+        background-position: center -56px;
+        width: 480px;
+        height: 400px;
+    }
+    .menu.item {
+        width: 400px;
+    }
+    .card {
+        width: 240px;
+        height: 240px;
+        padding: 24px 24px;
+    }
 }

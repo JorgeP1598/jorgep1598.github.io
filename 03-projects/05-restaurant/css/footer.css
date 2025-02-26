@@ -1,12 +1,22 @@
 #footer {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 64px;
     background-color: var(--primary2);
-    padding: var(--twenty-four);
+    padding-bottom: 32px;
+}
+#footer hr {
+    width: 90vw;
 }
 
 #footer .logo span {
     color: var(--primary1);
+    font-size: 32px;
+}
+#footer .logo {
+    padding: 16px;
 }
 
 #footer .container.center {
@@ -20,18 +30,22 @@
 }
 #footer .link {
     color: var(--white);
-    padding: var(--sixteen) 0px;
+    padding: 16px 0px;
 }
 #footer .link:hover {
     color: var(--primary1);
 }
 
-#social-medias i {
+#footer .icon i {
     color: var(--white);
-    padding: var(--twenty-four);
+    padding: 20px 24px;
 }
+#footer .icon i:hover {
+    color: var(--primary1);
+}
+
 #copyright {
     text-align: center;
     color: var(--white);
-    font-size: var(--small);
+    font-size: 8px;
 }

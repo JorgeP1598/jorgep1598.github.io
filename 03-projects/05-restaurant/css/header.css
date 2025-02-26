@@ -1,22 +1,14 @@
 #header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-    background-color: var(--primary2);
-}
-
-#header .logo span {
-    color: var(--primary1);
-}
-
-#header .pages {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary2);
+}
+#header .pages.left,
+#header .pages.right,
+#header .logo {
+    flex: 1;
 }
 #header .pages.left {
     justify-content: flex-start;
@@ -24,12 +16,65 @@
 #header .pages.right {
     justify-content: flex-end;
 }
+#header .logo {
+    justify-content: center;
+}
+
+#header .logo span {
+    color: var(--primary1);
+}
+#header .logo {
+    padding: 8px;
+}
+
+#header .pages {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 #header .page {
-    padding: var(--twenty-four);
+    min-width: 200px;
+    text-align: center;
+    padding: 20px 24px;
     color: var(--white);
+    transition: .15s ease-in-out;
+    i {
+        color: var(--white);
+    }
 }
 #header .page:hover {
     background-color: var(--primary1);
     color: var(--primary2);
+    i {
+        color: var(--primary2);
+    }
+}
+
+.dropdown.container {
+    position: relative;
+}
+.dropdown.menu {
+    position: absolute;
+    top: 61px;
+    background-color: var(--primary1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition:
+        opacity 0.15s,
+        visibility 0.15s,
+        transform .75s
+    ;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+.dropdown.container:hover .dropdown.menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+.dropdown.menu .page {
+    padding: 20px 24px;
 }

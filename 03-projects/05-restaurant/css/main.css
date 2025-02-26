@@ -1,0 +1,22 @@
+.button {
+    display: inline-block;
+    padding: 20px 24px;
+    border-radius: 0px 24px;
+    transition: .15s ease-in-out;
+}
+.yellow {
+    background-color: var(--primary1);
+    color: var(--primary2);
+}
+.black {
+    background-color: var(--primary2);
+    color: var(--primary1);
+}
+.yellow:hover {
+    background-color: var(--primary2);
+    color: var(--white);
+}
+.black:hover {
+    background-color: var(--primary1);
+    color: var(--primary2);
+}

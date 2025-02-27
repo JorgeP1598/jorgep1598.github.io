@@ -33,9 +33,8 @@
 }
 
 #header .page {
-    min-width: 200px;
     text-align: center;
-    padding: 20px 24px;
+    padding: 16px 20px;
     color: var(--white);
     transition: .15s ease-in-out;
     i {
@@ -55,7 +54,7 @@
 }
 .dropdown.menu {
     position: absolute;
-    top: 61px;
+    top: 56px;
     background-color: var(--primary1);
     opacity: 0;
     visibility: hidden;
@@ -69,6 +68,9 @@
 
     display: flex;
     flex-direction: column;
+    .page {
+        min-width: 200px;
+    }
 }
 .dropdown.container:hover .dropdown.menu {
     opacity: 1;

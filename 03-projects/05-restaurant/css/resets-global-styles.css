@@ -123,8 +123,8 @@ a {
         height: 300px;
     }
     #featured-dish {
-        background-size: 640px;
-        background-position: center -56px;
+        background-size: 480px;
+        background-position: center -40px;
         width: 480px;
         height: 400px;
     }
@@ -139,6 +139,11 @@ a {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+@media screen and (max-width: 1230px) and (min-width: 326px) {
+    #header .pages {
+        flex-direction: column;
+    }
+}
 @media screen and (max-width: 1080px) and (min-width: 326px) {
     .menu.gallery {
         grid-template-columns: repeat(1, 1fr);
@@ -148,11 +153,38 @@ a {
     .three-columns {
         flex-direction: column;
     }
-    
+    .media-text {
+        flex-direction: column;
+    }
+    .text.container {
+        order: 1;
+    }
+    .media.container {
+        order: 2;
+    }
 }
-@media screen and (max-width: 512px) and (min-width: 326px) {
+@media screen and (max-width: 520px) and (min-width: 326px) {
     #header {
         flex-direction: column;
+    }
+    #header .logo {
+        order: 1;
+        padding: 20px;
+    }
+    #header .pages.left {
+        order: 2;
+    }
+    #header .pages.right {
+        order: 3;
+    }
+    #featured-dish {
+        background-size: 320px;
+        background-position: center -40px;
+        width: 320px;
+        height: 280px;
+    }
+    .menu.item {
+        width: 240px;
     }
 }
 @media screen and (max-width: 481px) and (min-width: 326px) {
@@ -162,7 +194,7 @@ a {
 }
 
 /* MOBILE */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 325px) {
     h1 {
         font-size: 72px;
     }
@@ -183,13 +215,23 @@ a {
     }
     p,
     a {
-        font-size: 12px;
+        font-size: 16px;
     }
     #header {
         flex-direction: column;
     }
     #header .pages {
         flex-direction: column;
+    }
+    #header .logo {
+        order: 1;
+        padding: 20px;
+    }
+    #header .pages.left {
+        order: 2;
+    }
+    #header .pages.right {
+        order: 3;
     }
     #single-column,
     .threecolumns,
@@ -209,6 +251,15 @@ a {
             font-size: 16px;
         }
     }
+    .media-text {
+        flex-direction: column;
+    }
+    .text.container {
+        order: 1;
+    }
+    .media.container {
+        order: 2;
+    }
     .media img {
         width: 200px;
         height: 200px;
@@ -218,17 +269,24 @@ a {
         height: 300px;
     }
     #featured-dish {
-        background-size: 640px;
-        background-position: center -56px;
-        width: 480px;
-        height: 400px;
+        background-size: 280px;
+        background-position: center -36px;
+        width: 280px;
+        height: 240px;
     }
     .menu.item {
-        width: 400px;
+        width: 240px;
+    }
+    .menu.gallery {
+        grid-template-columns: repeat(1, 1fr);
     }
     .card {
         width: 240px;
         height: 240px;
         padding: 24px 24px;
+    }
+    .button {
+        padding: 16px 20px;
+        border-radius: 0px 24px;
     }
 }

@@ -1,0 +1,63 @@
+.single-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 64px;
+    padding: 0px 64;
+}
+.three-columns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 128px;
+}
+.column-size {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* .image {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    background-position: center center;
+}
+.team-one {
+    background: url("../images/49ers-logo2.png");
+}
+.team-two {
+    background: url("../images/chiefs-logo2.png");
+} */
+
+#header,
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    /* padding: 0px 64px; */
+}
+#header {
+    gap: 0px;
+    /* padding: 32px; */
+}
+.number {
+    width: 100vw;
+    padding: 40px 0px;
+    color: var(--white);
+    background-color: var(--primary1);
+    span {
+        color: var(--white);
+    }
+}

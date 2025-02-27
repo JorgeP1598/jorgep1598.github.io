@@ -20,10 +20,10 @@
 body {
     background: 
         linear-gradient(to bottom, 
-        var(--white), 
+            var(--white), 
         var(--off-white), 
         var(--white))
-    ;
+        ;
 }
 
 /* HEADINGS */

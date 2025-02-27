@@ -5,7 +5,6 @@
     align-items: center;
     text-align: center;
     gap: 64px;
-    /* padding: 0px 64px; */
 }
 .three-columns {
     display: flex;
@@ -26,19 +25,6 @@ img {
     height: 100%;
 }
 
-/* .image {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    background-position: center center;
-}
-.team-one {
-    background: url("../images/49ers-logo2.png");
-}
-.team-two {
-    background: url("../images/chiefs-logo2.png");
-} */
-
 #header,
 #footer {
     display: flex;
@@ -46,7 +32,7 @@ img {
     align-items: center;
     justify-content: center;
     gap: 32px;
-    padding: 0px 64px;
+    /* padding: 0px 64px; */
 }
 #header {
     gap: 0px;

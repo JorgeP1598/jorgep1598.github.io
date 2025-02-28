@@ -78,8 +78,8 @@
     display: block;
     object-fit: cover;
 
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
     border-radius: 24px 0px;
 }
 .media-text > .container {
@@ -90,8 +90,8 @@
     gap: 64px;
     text-align: center;
 
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
     h4,
     p {
         color: var(--white);
